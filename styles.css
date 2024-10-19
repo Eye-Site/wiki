@@ -11,11 +11,11 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
     margin: 0;
 }
-p, li, dt, dd {
+p, li, dl {
     color: #02083b;
     font-family: 'Quicksand', 'Courier New', Courier, monospace;
 }
-dt {
+dt { 
     font-weight: bold;
     padding-top: 10px;
 }

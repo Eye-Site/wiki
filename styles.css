@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap&family=Concert+One&display=swap');
-
+ 
 body {
     width: 80%;
     margin: auto;
@@ -15,7 +15,7 @@ p, li, dl {
     color: #02083b;
     font-family: 'Quicksand', 'Courier New', Courier, monospace;
 }
-dt { 
+dt {
     font-weight: bold;
     padding-top: 10px;
 }
@@ -70,12 +70,42 @@ img {
 .dark-blue {
     background-color: #a2c5ff;
 }
-
+ 
+/* Footer */
+footer {
+    background-color: #c5dbff;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.footer-links {
+    display: flex;
+    flex-flow: row;
+}
+ 
+.footer-links a {
+    margin: 0 10px;
+    font-family: 'Quicksand', 'Courier New', Courier, monospace;
+}
+ 
+.footer-content p {
+    margin: 5px 0;
+}
+ 
+ 
 @media (min-width: 769px) {
     #home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-rows: 0.5fr 0.5fr 2fr;
     }
     #about {
         grid-column: 1/2;
@@ -101,4 +131,8 @@ img {
     #upcoming {
         grid-column: 3/5;
     }
+    #footer-links {
+        flex-flow: column;
+    }
 }
+ 

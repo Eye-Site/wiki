@@ -11,9 +11,19 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
     margin: 0;
 }
-p {
+p, li, dt, dd {
     color: #02083b;
     font-family: 'Quicksand', 'Courier New', Courier, monospace;
+}
+dt {
+    font-weight: bold;
+    padding-top: 10px;
+}
+dl :first-child {
+    padding-top: 0;
+}
+dl {
+    padding: 10px;
 }
 img {
     width: 20%;
@@ -31,13 +41,17 @@ img {
 #eyesite-subtitle {
     text-align: center;
     margin-top: -50px;
-    /* margin-left: 50px; */
     margin-left: 150px;
 }
 .card {
     border-radius: 20px;
     padding: 15px;
     margin: 10px;
+}
+.card img {
+    border-radius: 50%;
+    width: 40%;
+    margin: 0 auto 10px auto;
 }
 .card h3 {
     margin: 0;
@@ -57,12 +71,11 @@ img {
     background-color: #a2c5ff;
 }
 
-
 @media (min-width: 769px) {
     #home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
     }
     #about {
         grid-column: 1/2;
@@ -79,9 +92,11 @@ img {
     }
     #user1 {
         grid-column: 1/2;
+        grid-row: 3/4;
     }
     #user2 {
         grid-column: 2/3;
+        grid-row: 3/4;
     }
     #upcoming {
         grid-column: 3/5;

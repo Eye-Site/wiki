@@ -70,7 +70,7 @@ img {
 .dark-blue {
     background-color: #a2c5ff;
 }
- 
+
 /* Footer */
 footer {
     background-color: #c5dbff;
@@ -85,22 +85,22 @@ footer {
     flex-direction: column;
     align-items: center;
 }
- 
+
 .footer-links {
     display: flex;
     flex-flow: row;
 }
- 
+
 .footer-links a {
     margin: 0 10px;
     font-family: 'Quicksand', 'Courier New', Courier, monospace;
 }
- 
+
 .footer-content p {
     margin: 5px 0;
 }
- 
- 
+
+
 @media (min-width: 769px) {
     #home-grid {
         display: grid;
